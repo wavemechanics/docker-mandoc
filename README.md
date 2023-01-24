@@ -16,8 +16,8 @@ install `mandoc` locally if they already have Docker installed.
 
    Create a file named `mandoc.sh` somewhere in your PATH looking like this:
 
-	#! /bin/sh
-	exec docker run -i -v `pwd`:/source --rm local/mandoc /usr/bin/mandoc "$@"
+       #! /bin/sh
+       exec docker run -i -v `pwd`:/source --rm local/mandoc /usr/bin/mandoc "$@"
 
    Make sure it executable.
 
